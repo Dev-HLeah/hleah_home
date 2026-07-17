@@ -43,14 +43,8 @@ main { flex: 1; }
 .container { width: min(1080px, 90%); margin: 0 auto; }
 
 /* ---------- 로고 ---------- */
-.logo { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); }
-.logo svg { display: block; }
-.logo-word {
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  font-size: 1.22rem;
-  line-height: 1;
-}
+.logo { display: inline-flex; align-items: center; flex-shrink: 0; }
+.logo img { height: 32px; width: auto; display: block; }
 
 /* ---------- 헤더 ---------- */
 .site-header {
@@ -66,7 +60,7 @@ main { flex: 1; }
   justify-content: space-between;
   height: 64px;
 }
-.site-nav { display: flex; gap: 28px; font-size: 0.9rem; }
+.site-nav { display: flex; gap: 18px; font-size: 0.86rem; white-space: nowrap; }
 .site-nav a { color: var(--ink-soft); transition: color 0.15s; }
 .site-nav a:hover { color: var(--ink); }
 .site-nav a.active { color: var(--navy); font-weight: 700; }
